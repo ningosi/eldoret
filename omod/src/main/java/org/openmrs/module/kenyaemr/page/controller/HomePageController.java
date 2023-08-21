@@ -26,8 +26,8 @@ public class HomePageController {
 	private final Log log = LogFactory.getLog(this.getClass());
 	
 	public String controller(PageModel model, UiUtils ui, HttpSession session, @SpringBean KenyaUiUtils kenyaUi) {
-		
-		return null;
+
+		return "redirect:" + ui.pageLink("kenyaemr", "userHome");
 	}
 
 }
